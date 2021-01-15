@@ -21,14 +21,14 @@
   <style type="text/css">
     @font-face {
       font-family: "face-Portrait";
-      font-weight: 600;
+      font-weight: 400;
       src: local("face-Portrait"),
       url("face-Portrait.woff") format("woff2");
     }
 
     @font-face {
       font-family: "face-Snap";
-      font-weight: 600;
+      font-weight: 400;
       src: local("face-Snap"),
       url("face-Snap.woff") format("woff2");
     }
@@ -50,7 +50,7 @@
       width: calc(100% - 14rem);
       height: 100%;
       font-family: face-Portrait;
-      font-size: 3rem;
+      font-size: 4rem;
       resize: none;
       border: none;
       outline: none;
@@ -136,13 +136,13 @@
 }); 
     $('.change-Snap').click(function(){
       $('textarea').css('font-family', 'face-Snap');
-      $('.change-Snap').css('color', 'red');
+      $('.change-Snap').css('color', 'blueviolet');
       $('.change-Portrait').css('color', 'black');
     })
 
     $('.change-Portrait').click(function(){
       $('textarea').css('font-family', 'face-Portrait');
-      $('.change-Portrait').css('color', 'red');
+      $('.change-Portrait').css('color', 'blueviolet');
       $('.change-Snap').css('color', 'black');
     })
   </script>
