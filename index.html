@@ -23,14 +23,14 @@
       font-family: "face-Portrait";
       font-weight: 400;
       src: local("face-Portrait"),
-      url("fonts/face-Portrait.woff") format("woff2");
+      url("face-Portrait.woff") format("woff2");
     }
 
     @font-face {
       font-family: "face-Snap";
       font-weight: 400;
       src: local("face-Snap"),
-      url("fonts/face-Snap.woff") format("woff2");
+      url("face-Snap.woff") format("woff2");
     }
 
     body{
@@ -86,11 +86,14 @@
       color: red;
     }
 
+    .insta a{
+      text-decoration: none;
+    }
+
     @media screen and (max-width: 700px){
       textarea{
         width: calc(100% - 11rem);
         font-size: 1.7rem;
-
       }
 
       .change-font div{
@@ -104,6 +107,10 @@
     .change-Snap{
       right: 1.5rem;
     }
+
+    a:visited{
+    color: red
+    }
     }
 
 
@@ -114,7 +121,7 @@
     <div class="change-Portrait">포트레이트</div><div class="change-Snap">스냅</div>
   </div>
 
-  <textarea>당신의 얼굴을 적어보세요.</textarea>
+  <textarea spellcheck="false">당신의 얼굴을 적어보세요.</textarea>
 
   <div class="insta">
     instagram<a href="https://www.instagram.com/jueunhyeong/" target="_blank">@jueunhyeong
